@@ -29,5 +29,21 @@ while True:
     random_number = random.randint(0, 2)
     # for understanding: rock: 0, paper: 1, scissor:2
     computer_choice = options[random_number]
+    print("Computer choice was", computer_choice + ".")
 
+    if user_input == "rock" and computer_choice == "scissor"
+        print("You won! Congratulations!")
+        user_wins += 1
+        continue
+
+    if user_input == "paper" and computer_choice == "rock"
+        print("You won! Congratulations!")
+        user_wins += 1
+        continue
+
+    if user_input == "scissor" and computer_choice == "paper"
+        print("You won! Congratulations!")
+        user_wins += 1
+        continue
+    
 print("Goodbye!")
