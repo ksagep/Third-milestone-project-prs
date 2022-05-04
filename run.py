@@ -17,6 +17,7 @@ user_wins = 0
 computer_wins = 0
 
 options = ["rock", "paper", "scissor"]
+#create a list for three possible options
 
 while True:
     user_input = input("Type Rock or Paper or Scissor or Q to quit").lower()
@@ -31,19 +32,25 @@ while True:
     computer_choice = options[random_number]
     print("Computer choice was", computer_choice + ".")
 
-    if user_input == "rock" and computer_choice == "scissor"
+    if user_input == "rock" and computer_choice == "scissor":
         print("You won! Congratulations!")
         user_wins += 1
         continue
 
-    if user_input == "paper" and computer_choice == "rock"
+    elif user_input == "paper" and computer_choice == "rock":
         print("You won! Congratulations!")
         user_wins += 1
         continue
 
-    if user_input == "scissor" and computer_choice == "paper"
+    elif user_input == "scissor" and computer_choice == "paper":
         print("You won! Congratulations!")
         user_wins += 1
         continue
-    
+
+    else:
+        print("You lost!")
+        computer_wins += 1
+
+print("You won", user_wins "times.")
+print("The computer won", computer_wins "times.")
 print("Goodbye!")
