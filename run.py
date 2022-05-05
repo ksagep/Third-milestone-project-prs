@@ -6,7 +6,7 @@ Create the intro to the game and give a possibility for player to choose continu
 print("Welcome to my computer game!")
 print("It is the classic paper - rock - scissor game in python environment.")
 
-playing = input("Do you want to play with it?")
+playing = input("Do you want to play with it?\n")
 
 if playing != "yes":
     quit("Thank you and have a nice day!")
@@ -20,7 +20,7 @@ options = ["rock", "paper", "scissor"]
 #create a list for three possible options
 
 while True:
-    user_input = input("Type Rock or Paper or Scissor or Q to quit").lower()
+    user_input = input("Type Rock or Paper or Scissor or Q to quit\n").lower()
     if user_input == "q":
         break
 
@@ -46,11 +46,16 @@ while True:
         print("You won! Congratulations!")
         user_wins += 1
         continue
+    
+    elif user_input == computer_choice:
+        print("It's a Tie!")
+        user_wins += 0
+        computer_wins += 0
+        continue
 
     else:
         print("You lost!")
         computer_wins += 1
 
-print("You won", user_wins "times.")
-print("The computer won", computer_wins "times.")
+
 print("Goodbye!")
