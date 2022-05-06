@@ -58,7 +58,24 @@ while True:
         print("You lost!")
         computer_wins += 1
 
-print("You won, " + str(user_wins) + " times.")
-print("The computer won, " + str(computer_wins) + " times.")
-print("You won, " + str((user_wins / (user_wins + computer_wins))*100) + " %.")
+print("You won: " + str(user_wins) + " times.")
+print("The computer won: " + str(computer_wins) + " times.")
+
+"""
+Provide solution for ZeroDivisionError when the second integer is 0.
+In mathematics, division by 0 is undefined so python won't undertand this step
+and it will generate an error.
+"""
+def divide_two_numbers():
+        a = input(user_wins)
+        b = input(user_wins + computer_wins)
+        
+        if int(b) == 0:
+        
+            c = "Next time choose at least one item: paper or rock or scissors, please. Thank you."
+        else:
+            c = int(a) / int(b)
+
+print("You won: " + str((a / b)*100) + " % of the game.")
 print("Goodbye!")
+divide_two_numbers()
