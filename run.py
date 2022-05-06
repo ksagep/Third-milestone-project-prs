@@ -76,6 +76,6 @@ def divide_two_numbers():
         else:
             c = int(a) / int(b)
 
-print("You won: " + str((a / b)*100) + " % of the game.")
+print("You won: " + str((user_wins / (user_wins + computer_wins))*100) + " % of the game.")
 print("Goodbye!")
 divide_two_numbers()
