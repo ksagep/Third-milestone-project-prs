@@ -17,14 +17,14 @@ print("Okay, let's play!")
 user_wins = 0
 computer_wins = 0
 
-options = ["rock", "paper", "scissors"]
 # create a list for three possible options
+options = ["rock", "paper", "scissors"]
 
 while True:
     user_input = input("Type rock or paper or scissors or q to quit\n").lower()
     if user_input == "q":
         break
-
+    # exclude possible variants that are not in options
     if user_input not in options:
         continue
 
@@ -66,16 +66,15 @@ Provide solution for ZeroDivisionError when the second integer is 0.
 In mathematics, division by 0 is undefined so python won't undertand this step
 and it will generate an error.
 """
-def divide_two_numbers():
-        a = input(user_wins)
-        b = input(user_wins + computer_wins)
+def divide_two_numbers(a,b):
+        a = user_wins
+        b = user_wins + computer_wins
         
-        if int(b) == 0:
-        
-            c = "Next time choose at least one item: paper or rock or scissors, please. Thank you."
-        else:
-            c = int(a) / int(b)
+        try:
+            return a/b
+        except ZeroDivisionError():
+            return 0
 
 print("You won: " + str((user_wins / (user_wins + computer_wins))*100) + " % of the game.")
 print("Goodbye!")
-divide_two_numbers()
+divide_two_numbers(a,b)
