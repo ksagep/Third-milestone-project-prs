@@ -47,7 +47,7 @@ while True:
         print("You won! Congratulations!")
         user_wins += 1
         continue
-# increase the responsiveness of the game put the 'Tie' option into it    
+# put the 'Tie' option into it for increase the responsiveness of the game
     elif user_input == computer_choice:
         print("It's a Tie!")
         user_wins += 0
@@ -66,15 +66,15 @@ Provide solution for ZeroDivisionError when the second integer is 0.
 In mathematics, division by 0 is undefined so python won't undertand this step
 and it will generate an error.
 """
-def divide_two_numbers(a,b):
-        a = user_wins
-        b = user_wins + computer_wins
-        
-        try:
-            return a/b
-        except ZeroDivisionError():
-            return 0
 
-print("You won: " + str((user_wins / (user_wins + computer_wins))*100) + " % of the game.")
+def divide_two_numbers(user_wins, computer_wins):
+    try:   
+        a = int((input(user_wins)))
+        b = int((input(user_wins + computer_wins)))
+        return a / b
+    except ZeroDivisionError():
+        return 0        
+
+print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + " % of the game.")
 print("Goodbye!")
-divide_two_numbers(a,b)
+divide_two_numbers(user_wins, computer_wins)
