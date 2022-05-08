@@ -1,31 +1,50 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Rock - Paper - Scissors: The classic game is back
 
-Welcome ksagep,
+Rock, Paper, Scissors is a classic game which runs on Heroku. The excitement of the game is given by its variety, even if there are three options to choose from. You can find more information about this game on the [Wikipedia](https://en.wikipedia.org/wiki/Rock_paper_scissors)
 
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
+You could find the live version of my project [here]
 
-## Reminders
+(https://)
 
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
+## How to play?
+The player choose from three options and the computer also.
+According to the rules of the game rock hit scissors, scissors hit paper and paper hit rock.
+If the player and the computer chose the same option it will be 'Tie'.
+The goal of the player is to score more points than the computer.
 
-## Creating the Heroku app
+## Features
+### Existing features
+- Accepts user input;
+- Play against the computer;
+- Random options generation for computer;
+- Input validation and exception checking:
+    - Have to write the option with lowercase;
+    - You can choose from the three options which contain the full words of rock, paper or scissors;
+    - Zero divide exception is maintain;
+- Maintain scores.
 
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
+### Future feature
+- Count the options how many times You chose during the play;
 
-1. `heroku/python`
-2. `heroku/nodejs`
+## Data Model
 
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
 
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
+## Testing
 
-Connect your GitHub repository and deploy as normal.
 
-## Constraints
+## Bugs and validation
+### Solved bug
 
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line.
 
------
-Happy coding!
+### Validation with PEP8
+
+
+## Deployment
+- Create a new Heroku app;
+- Set the 'python' and 'node.js' buildpacks, in this order;
+- Link the Heroku app to my repository of my third project;
+- Click on 'Deploy' button.
+
+## Credits
+- Code Institute for the deployment terminal;
+- Wikipedia for the details of the game.
