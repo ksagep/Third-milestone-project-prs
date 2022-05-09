@@ -29,15 +29,15 @@ The goal of the player is to score more points than the computer.
 ## Data Model
 
 
-## Testing
+### Testing
 
 
-## Bugs and validation
-### Solved bug
+### Bugs and validation
+#### Solved bug
+During the development of my project, I was getting zero divide error because when I maintained the scores by percentage I did not used exception. I fixed this with ... exception method using.
 
-
-### Validation with PEP8
-
+#### Validation with PEP8
+I validated my app with PEP8 validator. 
 
 ## Deployment
 - Create a new Heroku app;
