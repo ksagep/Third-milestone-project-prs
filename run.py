@@ -9,9 +9,9 @@ print("It is the classic paper - rock - scissors game in python environment.")
 
 playing = input("Do you want to play with it?\n")
 
-if playing not in ["yes", "y"] :
+if playing not in ["yes", "y"]:
     quit("Thank you and have a nice day!")
-    
+
 print("Okay, let's play!")
 
 user_wins = 0
@@ -73,23 +73,28 @@ and it will generate an error.
 #   z = 0
 
 def divide_two_numbers(user_wins, computer_wins):
-    try:   
+
+    try:
         a = int(user_wins)
         b = int(user_wins + computer_wins)
-        
+
     except ZeroDivisionError():
         return
-    
+
     if computer_wins == 0:
-        print("Please, play at least one game because the division with 0 is undefined. Thank you.")
-        
+        print("Please, play at least one game\
+            because the division with 0 is undefined. Thank you.")
+
     elif computer_wins > 0:
-        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + " % of the game.")
+        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
+            % of the game.")
         print("Goodbye!")
     elif user_wins == 0:
-        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + " % of the game.")
+        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
+            % of the game.")
         print("Goodbye!")
     else:
-        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + " % of the game.")
+        print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
+            % of the game.")
         print("Goodbye!")
 divide_two_numbers(user_wins, computer_wins)
