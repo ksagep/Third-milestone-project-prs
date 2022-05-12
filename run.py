@@ -89,12 +89,15 @@ def divide_two_numbers(user_wins, computer_wins):
         print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
             % of the game.")
         print("Goodbye!")
+
     elif user_wins == 0:
         print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
             % of the game.")
         print("Goodbye!")
+
     else:
         print("You won: " + str(user_wins / (user_wins + computer_wins)*100) + "\
             % of the game.")
         print("Goodbye!")
+
 divide_two_numbers(user_wins, computer_wins)
