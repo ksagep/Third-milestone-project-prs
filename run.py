@@ -101,4 +101,5 @@ def divide_two_numbers(user_wins, computer_wins):
             % of the game.")
         print("Goodbye!")
 
+
 divide_two_numbers(user_wins, computer_wins)
