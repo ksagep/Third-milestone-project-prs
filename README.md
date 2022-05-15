@@ -20,7 +20,9 @@ The goal of the player is to score more points than the computer.
 - Give the oportunity to quick from the game before start it;
 ![My Image](asset/images/if-chose-quit-at-the-start.jpg)
 - Play against the computer;
+![My Image](asset/images/if-chose-yes.jpg)
 - Random options generation for computer;
+![My Image](asset/images/computer-random-choice.jpg)
 - Input validation and exception checking:
     - Have to write the option with lowercase;
     - You can choose from the three options which contain the full words of rock, paper or scissors;
