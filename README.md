@@ -33,23 +33,23 @@ The goal of the player is to score more points than the computer.
 ### Future feature
 - Count the options how many times You chose during the play;
 
-## Data Model
-
+## Testing
+Tested in my local terminal and the Code Institute Heroku Terminal.
+Given invalid inputs: numbers, blank spaces and/or abbreviations when strings were expected. If you did it, the app will ask you change from the three options or quit from the game (with letter 'q').
 
 ### Bugs and validation
 #### Solved bug
 During the development of my project, I was getting zero divide error because when I maintained the scores by percentage I did not used exception. I fixed this with if/elif/else exception method using.
 
 #### Validation with PEP8
-Tested in my local terminal and the Code Institute Heroku Terminal.
-Given invalid inputs: numbers and/or abbreviations when strings were expected.  
-I validated my app with PEP8 validator and everything was all right according to the validator. 
+I validated my app with PEP8 validator and everything was all right according to the validator.
+![My Image](asset/images/pep8-validator-result.jpg)
 
 ## Deployment
 - Create a new Heroku app;
 - Set the 'python' and 'node.js' buildpacks, in this order;
 - Link the Heroku app to my repository of my third project;
-- Click on 'Deploy' button and I got "Internal server error" message. My Heroku token was compromised. Unfortunately, I did not find a proper solution on the internet and Slack. Furthermore, my mentor also could not solve the problem so I used the tutor support. This problem was solved via gitpod. After this small victory I tried to open the app and I got "Application error" message. After two days SAR (Search and Rescue) mission I used again tutor support of Code Institute. The problem found in package.json, I could open the app and finalised my project. 
+- Click on 'Deploy' button and I got "Internal server error" message. My Heroku token was compromised. Unfortunately, I did not find a proper solution on the internet and Slack. Furthermore, my mentor also could not solve the problem so I used the tutor support. This problem was solved via gitpod. After this small victory I tried to open the app and I got "Application error" message. The problem found in package.json. After managing the problem, I could open the app and finalised my project. 
 
 ## Credits
 - Code Institute for the deployment terminal;
